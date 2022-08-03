@@ -1,12 +1,47 @@
 :root {
-    --brand-color: #00439c;
-    --ms-text-color-primary: white;
-    --ms-text-color-secondary: black;
+  --brand-color: #00439c;
+  --ms-text-color-primary: white;
+  --ms-text-color-secondary: black;
 }
-
 
 /*#region header*****/
 header .upper-header img {
-    max-height: 1rem;
+  max-height: 1rem;
 }
 /*#endregion header*****/
+
+/*#region main*****/
+
+/*#region hero*****/
+.hero {
+    min-height: 90vh;
+    max-width: 100vw;
+
+}
+
+#top-hero {
+    background-image: url(../img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .hero-content {
+    color: var(--ms-text-color-primary);
+    font-weight: 600;
+}
+
+
+.hero .hero-content img{
+    height: 2.5rem;
+}
+
+.hero .hero-content > * {
+    margin-top: 1.5rem
+}
+
+
+/*#endregion hero*****/
+
+
+/*#endregion main*****/
