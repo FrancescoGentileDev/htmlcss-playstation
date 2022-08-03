@@ -4,6 +4,9 @@
   --ms-text-color-secondary: black;
   --ms-text-color-third: #4d4d4d;
 }
+ul {
+    list-style: none;
+}
 
 
 /*#region utilities*****/
@@ -140,3 +143,11 @@ header .upper-header img {
     max-width: 350px;
 }
 /*#endregion playnow product hero*****/
+
+
+/*#region footer*****/
+footer a {
+    text-decoration: none;
+    color: var(--ms-text-color-primary)
+}
+/*#endregion footer*****/
