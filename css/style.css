@@ -117,3 +117,14 @@ header .upper-header img {
 }
 
 /*#endregion new release notes*****/
+
+
+/*#region playplus product hero*****/
+#playplus {
+    background-color: #BEBCBB
+}
+
+#playplus .hero-content img {
+    max-width: 350px;
+}
+/*#endregion playplus product hero*****/
