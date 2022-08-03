@@ -2,10 +2,22 @@
   --brand-color: #00439c;
   --ms-text-color-primary: white;
   --ms-text-color-secondary: black;
+  --ms-text-color-third: #4d4d4d;
 }
 
 
 /*#region utilities*****/
+
+.ms-color-primary {
+    color: var(--ms-text-color-primary)
+}
+.ms-color-secondary {
+    color: var(--ms-text-color-secondary)
+}
+.ms-color-third {
+    color: var(--ms-text-color-third) !important
+}
+
 
 .ms-marked {
     border: 3px solid var(--brand-color);
@@ -18,7 +30,7 @@
 /*#region title presection*****/
     .pre-section {
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 6rem;
         margin-bottom: 3rem;
     }
 
@@ -29,7 +41,6 @@
 
     }
     .pre-section h5 {
-        color: grey;
     }
 /*#endregion title presection*****/
 
@@ -97,3 +108,12 @@ header .upper-header img {
 
 
 /*#endregion main*****/
+
+
+/*#region new release notes*****/
+
+#new-release {
+    background-color: #1F1F1F
+}
+
+/*#endregion new release notes*****/
