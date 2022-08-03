@@ -54,11 +54,18 @@ header .upper-header img {
 
 }
 
-#top-hero {
-    background-image: url(../img/jumbo-bg.png);
+.hero {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#top-hero {
+    background-image: url(../img/jumbo-bg.png);
+}
+
+#secondHero {
+    background-image: url(../img/jumbo-bg.png);
 }
 
 .hero .hero-content {
@@ -66,10 +73,6 @@ header .upper-header img {
     font-weight: 600;
 }
 
-
-.hero .hero-content img{
-    height: 2.5rem;
-}
 /*#endregion hero*****/
 
 /*#region subhero cards*****/
@@ -79,6 +82,18 @@ header .upper-header img {
 }
 /*#endregion subhero cards*****/
 
+
+/*#region product-cards*****/
+.product-cards > * {
+    padding: 0 2rem
+}
+
+.product-cards .ms-marked {
+    border:none;
+    border-bottom: 3px solid var(--brand-color);
+    border-radius: unset;
+}
+/*#endregion product-cards**** */
 
 
 /*#endregion main*****/
