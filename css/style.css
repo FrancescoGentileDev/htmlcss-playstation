@@ -1,0 +1,12 @@
+:root {
+    --brand-color: #00439c;
+    --ms-text-color-primary: white;
+    --ms-text-color-secondary: black;
+}
+
+
+/*#region header*****/
+header .upper-header img {
+    max-height: 1rem;
+}
+/*#endregion header*****/
