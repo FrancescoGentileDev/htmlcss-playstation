@@ -32,7 +32,7 @@
 
     <header class="position-fixed fixed-top mb-5">
 
-        <div class="upper-header bg-black p-2 text-end ">
+        <div id="upper-header" class="upper-header bg-black p-2 text-end ">
             <img src="img/sony_logo.svg" class="" alt="">
         </div>
 
@@ -231,7 +231,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="hero-content col-12 col-lg-4 mb-3">
-                        <img src="img/returnal-hero-banner-logo.png" class="" alt="">
+                        <img src="img/returnal-hero-banner-logo.png" class="img-fluid" alt="">
                         <h1>Rompi il cerchio</h1>
                         <p>
                             Rialzati dopo sconfitta e affronta una nuova
@@ -247,10 +247,10 @@
         <!--#region subhero-cards-->
         <section class="subhero-cards mt-4">
             <div class="container">
-                <div class="row justify-content-between g-3 align-items-center">
-                    <div class="col ms-marked"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid"
+                <div class="row justify-content-between align-items-center ms-cards-wrapper">
+                    <div class="col"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid  ms-marked"
                             alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                    <div class="col-6 col-sm-4 col-lg "><img src="img/returnal-listing-thumb-01-ps5.jpg"
                             class="img-fluid" alt=""></div>
                     <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
                             class="img-fluid" alt=""></div>
@@ -275,8 +275,8 @@
 
         <!--#region product hero-->
         <section id="product-hero">
-            <div class="row container mx-auto align-items-center">
-                <div class="hero-content col-12 col-md-6">
+            <div class="row container mx-auto align-items-center mb-5">
+                <div class="hero-content col-12 col-md-6 ">
 
                     <h1>Console PlayStation 5</h1>
                     <h5>
@@ -291,47 +291,47 @@
 
             <!--#region product-cards-->
             <div class="row product-cards text-center container mx-auto">
-                <div class="col ms-marked">
+                <div class="col-4 col-md">
                     <div class="product-img">
                         <img src="./img/playstation-5-thumb.png" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
-                        <p class="fs-5">Console PS5</p>
+                        <p class="fs-5 d-none d-md-block ">Console PS5</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <div class="product-img">
                         <img src="./img/joypad-thumb.png" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
-                        <p class="fs-5">Controller wireless
+                        <p class="fs-5 d-none d-md-block">Controller wireless
                             DualSense</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <div class="product-img">
                         <img src="./img/camera-thumb.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
-                        <p class="fs-5">Cuffie wireless con
+                        <p class="fs-5 d-none d-md-block">Cuffie wireless con
                             microfono PULSE 3
                         </p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <div class="product-img">
                         <img src="./img/remote-thumb.png" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
-                        <p class="fs-5">Telecomando Media</p>
+                        <p class="fs-5 d-none d-md-block">Telecomando Media</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-4 col-md">
                     <div class="product-img">
                         <img src="./img/headset-thumb.png" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
-                        <p class="fs-5">Telecamera HD</p>
+                        <p class="fs-5 d-none d-md-block">Telecamera HD</p>
                     </div>
                 </div>
 
@@ -522,11 +522,11 @@
         <!--#endregion EXPLORE-->
 
         <!--#region Playplus hero-->
-        <section id="playplus" class="product-hero mt-5">
+        <section id="playplus" class="product-hero mt-5 p-4">
             <div class="row container mx-auto align-items-center">
                 <div class="hero-content col-12 col-md-6">
 
-                    <img src="img/ps-plus-logo.png" class="img-fluid max" alt="">
+                    <img src="img/ps-plus-logo.png" class="w-50" alt="">
                     <h5>
                         Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, 
                         giochi mensili, sconti esclusivi e altro ancora.
@@ -568,11 +568,11 @@
 
 
         <!--#region fourth hero-->
-        <section id="playnow" class="product-hero mt-5">
+        <section id="playnow" class="product-hero mt-5 p-5">
             <div class="row container mx-auto align-items-center">
                 <div class="hero-content col-12 col-md-6">
 
-                    <img src="img/ps-now-logo-two-column.png" class="img-fluid max" alt="">
+                    <img src="img/ps-now-logo-two-column.png" class="w-50" alt="">
                     <h5 class="ms-color-primary">
                         Ottieni accesso immediato a una vastissima raccolta di oltre giochi per 
                         PS4, PS3 e PS2 su PS4 0 PC Windows, nuovi titoli aggiunti ogni mese.
@@ -680,6 +680,21 @@
         crossorigin="anonymous"></script>
     <!--#endregion BOOTSTRAP SCRIPT-->
 
+
+    <script> 
+
+    const upperHeader = document.getElementById('upper-header');
+    document.addEventListener("scroll", (e)=> {
+        var scroll = window.pageYOffset;
+        if(scroll >= 40) {
+            upperHeader.style.display = "none";
+        }
+        else {
+            upperHeader.style.display = "block";
+        }
+    })
+
+    </script>
 </body>
 
 </html>
