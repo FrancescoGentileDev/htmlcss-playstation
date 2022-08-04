@@ -5,61 +5,70 @@
   --ms-text-color-third: #4d4d4d;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 
 /*#region utilities*****/
 
 .ms-color-primary {
-    color: var(--ms-text-color-primary) !important
+  color: var(--ms-text-color-primary) !important;
 }
 .ms-color-secondary {
-    color: var(--ms-text-color-secondary) !important
+  color: var(--ms-text-color-secondary) !important;
 }
 .ms-color-third {
-    color: var(--ms-text-color-third) !important
+  color: var(--ms-text-color-third) !important;
 }
 .ms-bg-brand {
-    background-color: var(--brand-color)
+  background-color: var(--brand-color);
 }
-.ms-nav-text-color a{
-    color: var(--ms-text-color-secondary) !important
-}
+
 .ms-marked {
-    border: 3px solid var(--brand-color);
-    padding: 2px;
-    border-radius: 25px;
+  border: 3px solid var(--brand-color);
+  padding: 2px;
+  border-radius: 25px;
 }
 .hero-content > * {
-    margin-top: 1.5rem
+  margin-top: 1.5rem;
+}
+
+.ms-column-gap {
+  column-gap: 1rem;
 }
 /*#region title presection*****/
-    .pre-section {
-        text-align: center;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-    }
+.pre-section {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
 
-    .pre-section h6{
-        text-transform: uppercase;
-        color: var(--brand-color);
-        margin: 0;
-
-    }
-    .pre-section h5 {
-    }
+.pre-section h6 {
+  text-transform: uppercase;
+  color: var(--brand-color);
+  margin: 0;
+}
 /*#endregion title presection*****/
-
-
 
 /*#endregion utilities*****/
 
-
-
 /*#region header*****/
-header .upper-header img {
+.upper-header img {
   max-height: 1rem;
+}
+
+.nav-link.dropdown-toggle.show {
+  color: var(--brand-color);
+}
+.nav-link.dropdown-toggle::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  border: none;
+  transform: rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-link.dropdown-toggle.show::after {
+    transform: rotate(180deg);
 }
 /*#endregion header*****/
 
@@ -67,89 +76,83 @@ header .upper-header img {
 
 /*#region hero*****/
 .hero {
-    min-height: 85vh;
-    max-width: 100vw;
-
+  min-height: 85vh;
+  max-width: 100vw;
 }
 
 .hero {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #top-hero {
-    background-image: url(../img/jumbo-bg.png);
+  background-image: url(../img/jumbo-bg.png);
 }
 
 #secondHero {
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
 .hero .hero-content {
-    color: var(--ms-text-color-primary);
-    font-weight: 600;
+  color: var(--ms-text-color-primary);
+  font-weight: 600;
 }
 
 /*#endregion hero*****/
 
 /*#region subhero cards*****/
 .subhero-cards img {
-    border-radius: 20px;
-    min-width: 100px;
+  border-radius: 20px;
+  min-width: 100px;
 }
 /*#endregion subhero cards*****/
 
-
 /*#region product-cards*****/
 .product-cards > * {
-    padding: 0 2rem
+  padding: 0 2rem;
 }
 
 .product-cards .ms-marked {
-    border:none;
-    border-bottom: 3px solid var(--brand-color);
-    border-radius: unset;
+  border: none;
+  border-bottom: 3px solid var(--brand-color);
+  border-radius: unset;
 }
 /*#endregion product-cards**** */
 
-
 /*#endregion main*****/
-
 
 /*#region new release notes*****/
 
 #new-release {
-    background-color: #1F1F1F
+  background-color: #1f1f1f;
 }
 
 /*#endregion new release notes*****/
 
-
 /*#region playplus product hero*****/
 #playplus {
-    background-color: #BEBCBB
+  background-color: #bebcbb;
 }
 
 #playplus .hero-content img {
-    max-width: 350px;
+  max-width: 350px;
 }
 /*#endregion playplus product hero*****/
 
 /*#region playnow product hero*****/
 #playnow {
-    background-color: #161C3B
+  background-color: #161c3b;
 }
 
 #playnow .hero-content img {
-    max-width: 350px;
+  max-width: 350px;
 }
 /*#endregion playnow product hero*****/
 
-
 /*#region footer*****/
 footer a {
-    text-decoration: none;
-    color: var(--ms-text-color-primary)
+  text-decoration: none;
+  color: var(--ms-text-color-primary);
 }
 /*#endregion footer*****/
