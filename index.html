@@ -37,40 +37,101 @@
         <div class="upper-header bg-black p-2 text-end">
             <img src="img/sony_logo.svg" class="" alt="">
         </div>
-        <div class="container-fluid">
 
-            <nav class="row justify-content-between text-center align-items-center bg-white p-1">
-                <div class="col-7">
-                    <div class="row align-items-center">
-                        <div class="col"><a href="#"><svg class="shared-nav-ps-logo" width="50px" height="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" data-di-res-id="51237b9e-85bdd8e5" data-di-rand="1620209019838">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg class="shared-nav-ps-logo" width="50px" height="50px" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 50 50" data-di-res-id="51237b9e-85bdd8e5" data-di-rand="1620209019838">
+                        <g>
                             <g>
-                              <g>
                                 <path d="M5.8,32.1C4.3,33.1,4.8,35,8,35.9c3.3,1.1,6.9,1.4,10.4,0.8c0.2,0,0.4-0.1,0.5-0.1v-3.4l-3.4,1.1
                              c-1.3,0.4-2.6,0.5-3.9,0.2c-1-0.3-0.8-0.9,0.4-1.4l6.9-2.4V27l-9.6,3.3C8.1,30.7,6.9,31.3,5.8,32.1z M29,17.1v9.7
                              c4.1,2,7.3,0,7.3-5.2c0-5.3-1.9-7.7-7.4-9.6C26,11,23,10.1,20,9.5v28.9l7,2.1V16.2c0-1.1,0-1.9,0.8-1.6C28.9,14.9,29,16,29,17.1z
                               M42,29.8c-2.9-1-6-1.4-9-1.1c-1.6,0.1-3.1,0.5-4.5,1l-0.3,0.1v3.9l6.5-2.4c1.3-0.4,2.6-0.5,3.9-0.2c1,0.3,0.8,0.9-0.4,1.4
-                             l-10,3.7V40L42,34.9c1-0.4,1.9-0.9,2.7-1.7C45.4,32.2,45.1,30.8,42,29.8z" fill="#00439c"></path>
-                              </g>
+                             l-10,3.7V40L42,34.9c1-0.4,1.9-0.9,2.7-1.7C45.4,32.2,45.1,30.8,42,29.8z" fill="#00439c">
+                                </path>
                             </g>
-                          </svg></a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="row align-items-center">
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
-                        <div class="col"><a href="#">Lorem</a></div>
+                        </g>
+                    </svg>
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-black ms-nav-text-color">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropGame" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Giochi</a>
+                            <div class="dropdown-menu" aria-labelledby="dropGame">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropHardware" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Hardware</a>
+                            <div class="dropdown-menu" aria-labelledby="dropHardware">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropServices" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Servizi</a>
+                            <div class="dropdown-menu" aria-labelledby="dropServices">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropNews" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">News</a>
+                            <div class="dropdown-menu" aria-labelledby="dropNews">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropBuy" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Fai acquisti</a>
+                            <div class="dropdown-menu" aria-labelledby="dropBuy">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropSupport" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Supporto</a>
+                            <div class="dropdown-menu" aria-labelledby="dropSupport">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
 
-                    </div>
+                    <ul class="d-flex my-0 align-items-center">
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropSupport" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Supporto</a>
+                            <div class="dropdown-menu" aria-labelledby="dropSupport">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="btn btn-dark rounded-5 me-3">Accedi</a></li>
+                        <li><a href="#"
+                                class="fa fa-solid fa-magnifying-glass ms-color-secondary text-decoration-none fs-4"></a>
+                        </li>
+                    </ul>
+
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
 
     <main>
@@ -99,11 +160,16 @@
                 <div class="row justify-content-between g-3 align-items-center">
                     <div class="col ms-marked"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid"
                             alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt=""></div>
-                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt=""></div>
+                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                            class="img-fluid" alt=""></div>
+                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                            class="img-fluid" alt=""></div>
+                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                            class="img-fluid" alt=""></div>
+                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                            class="img-fluid" alt=""></div>
+                    <div class="col-6 col-sm-4 col-lg"><img src="img/returnal-listing-thumb-01-ps5.jpg"
+                            class="img-fluid" alt=""></div>
                 </div>
             </div>
         </section>
@@ -451,61 +517,63 @@
         </section>
         <!--#endregion social-->
     </main>
-<!--#region footer-->
-<footer class="ms-bg-brand pt-3">
-    <div class="row container mx-auto justify-content-between">
-        <div class="col-3">
-            <img src="img/play_logo.svg" class="img-fluid w-50" alt="">
-            <p class="ms-color-primary"><i class="fa fa-solid fa-globe"></i> Country/Region Italy</p>
-        </div>
-        <div class="col-6">
-            <div class="row">
-                <div class="col">
-                    <ul>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                        <li><a href="#">Link footer</a></li>
-                    </ul>
-                </div>
+    <!--#region footer-->
+    <footer class="ms-bg-brand pt-3">
+        <div class="row container mx-auto justify-content-between">
+            <div class="col-3">
+                <img src="img/play_logo.svg" class="img-fluid w-50" alt="">
+                <p class="ms-color-primary"><i class="fa fa-solid fa-globe"></i> Country/Region Italy</p>
             </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                            <li><a href="#">Link footer</a></li>
+                        </ul>
+                    </div>
+                </div>
 
 
+            </div>
         </div>
-    </div>
 
-    <div class="row mt-5 container mx-auto">
-        <div class="col-7 mb-5">
-            <img src="img/sie-logo.svg" class="w-25" alt="">
-            <p class="mt-3 ms-color-primary">Website &copy;2021 Sony Interactive Entertainment Limited. Tutti i contenuti, nomi 
-                dei giochi, nomi commerciali elo di abbigliamento, marchi e 
-                immagini associati sono marchi e/o materiale protetto da copyright dei 
-                rispettivi proprietari. Tutti i diritti riservati. <a href="#" class="ms-color-primary">Maggiori info</a</p>
+        <div class="row mt-5 container mx-auto">
+            <div class="col-7 mb-5">
+                <img src="img/sie-logo.svg" class="w-25" alt="">
+                <p class="mt-3 ms-color-primary">Website &copy;2021 Sony Interactive Entertainment Limited. Tutti i
+                    contenuti, nomi
+                    dei giochi, nomi commerciali elo di abbigliamento, marchi e
+                    immagini associati sono marchi e/o materiale protetto da copyright dei
+                    rispettivi proprietari. Tutti i diritti riservati. <a href="#" class="ms-color-primary">Maggiori
+                        info</a< /p>
+            </div>
         </div>
-    </div>
-</footer>
-<!--#endregion footer-->
+    </footer>
+    <!--#endregion footer-->
 
     <!--#region BOOTSTRAP SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

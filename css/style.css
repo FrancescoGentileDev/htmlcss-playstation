@@ -12,10 +12,10 @@ ul {
 /*#region utilities*****/
 
 .ms-color-primary {
-    color: var(--ms-text-color-primary)
+    color: var(--ms-text-color-primary) !important
 }
 .ms-color-secondary {
-    color: var(--ms-text-color-secondary)
+    color: var(--ms-text-color-secondary) !important
 }
 .ms-color-third {
     color: var(--ms-text-color-third) !important
@@ -23,7 +23,9 @@ ul {
 .ms-bg-brand {
     background-color: var(--brand-color)
 }
-
+.ms-nav-text-color a{
+    color: var(--ms-text-color-secondary) !important
+}
 .ms-marked {
     border: 3px solid var(--brand-color);
     padding: 2px;
