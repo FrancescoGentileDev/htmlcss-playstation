@@ -684,7 +684,10 @@
     <script> 
 
     const upperHeader = document.getElementById('upper-header');
-    document.addEventListener("scroll", (e)=> {
+    document.addEventListener("scroll", hideNav)
+    var previousValue;
+    function hideNav(e) {
+
         var scroll = window.pageYOffset;
         if(scroll >= 40) {
             upperHeader.style.display = "none";
@@ -692,8 +695,17 @@
         else {
             upperHeader.style.display = "block";
         }
-    })
 
+
+        if(previousValue < scroll && scroll > 560) {
+            document.getElementsByTagName("nav")[0].style.transform = "translateY(-100%)";
+        }
+        else {
+            document.getElementsByTagName("nav")[0].style.transform = "translateY(0%)";
+        }
+        previousValue= scroll;
+
+    }
     </script>
 </body>
 
