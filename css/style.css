@@ -41,6 +41,10 @@ ul {
 }
 .ms-btn-orange:hover {
   background-color: #cd3e0f;
+  border: none;
+  outline: 3px solid #cd3e0f;
+  outline-offset: 3px;
+  margin-top: 26px;
   color: white;
 }
 /*#region title presection*****/
@@ -128,6 +132,19 @@ nav {
   animation-name: slideIn;
 }
 
+
+.ms-dropheader-links a:hover {
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.52)
+}
+.ms-dropheader-support > a:before {
+  color: var(--brand-color);
+  content:"\2022";
+  font-size: 1.5rem;
+  line-height: 23px;
+  vertical-align: text-bottom;
+  margin-right: 0.2rem;
+
+}
 /*#endregion header*****/
 
 /*#region main*****/
@@ -172,6 +189,16 @@ nav {
         border-radius: 25px;
 
 }
+.ms-cards-wrapper > * {
+  transform: translateY(0);
+  transition: transform .4s ease-in-out 
+}
+
+.ms-cards-wrapper > *:not(:first-child):hover {
+  transform: translateY(-15%);
+}
+
+
 /*#endregion subhero cards*****/
 
 /*#region product-cards*****/
@@ -184,9 +211,11 @@ nav {
   border-radius: unset;
   opacity: 1;
 }
+
 .product-cards > *:hover {
     opacity: 1;
     border-bottom: 3px solid var(--brand-color);
+    
 }
 
 /*#endregion product-cards**** */
