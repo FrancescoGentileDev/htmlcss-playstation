@@ -285,7 +285,7 @@
                     <a href="#" class="btn btn-primary rounded-4">Maggiori informazioni</a>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="./img/playstation-5-thumb.png" class="img-fluid" alt="">
+                    <img src="./img/playstation-5-thumb.png" id="product-big" class="img-fluid" alt="">
                 </div>
             </div>
 
@@ -310,7 +310,7 @@
                 </div>
                 <div class="col-4 col-md">
                     <div class="product-img">
-                        <img src="./img/camera-thumb.jpg" class="img-fluid" alt="">
+                        <img src="./img/headset-thumb.png" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
                         <p class="fs-5 d-none d-md-block">Cuffie wireless con
@@ -328,7 +328,7 @@
                 </div>
                 <div class="col-4 col-md">
                     <div class="product-img">
-                        <img src="./img/headset-thumb.png" class="img-fluid" alt="">
+                        <img src="./img/camera-thumb.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="product-description">
                         <p class="fs-5 d-none d-md-block">Telecamera HD</p>
@@ -522,9 +522,9 @@
         <!--#endregion EXPLORE-->
 
         <!--#region Playplus hero-->
-        <section id="playplus" class="product-hero mt-5 p-4">
+        <section id="playplus" class="product-hero mt-5">
             <div class="row container mx-auto align-items-center">
-                <div class="hero-content col-12 col-md-6">
+                <div class="hero-content col-12 col-md-6  mb-5">
 
                     <img src="img/ps-plus-logo.png" class="w-50" alt="">
                     <h5>
@@ -568,9 +568,9 @@
 
 
         <!--#region fourth hero-->
-        <section id="playnow" class="product-hero mt-5 p-5">
+        <section id="playnow" class="product-hero mt-5">
             <div class="row container mx-auto align-items-center">
-                <div class="hero-content col-12 col-md-6">
+                <div class="hero-content col-12 col-md-6 mb-5">
 
                     <img src="img/ps-now-logo-two-column.png" class="w-50" alt="">
                     <h5 class="ms-color-primary">
@@ -618,12 +618,12 @@
     </main>
     <!--#region footer-->
     <footer class="ms-bg-brand pt-3">
-        <div class="row container mx-auto justify-content-between">
+        <div class="row container mx-auto justify-content-between align-items-center">
             <div class="col-6 mb-5">
                 <img src="img/play_logo.svg" class="img-fluid w-50" alt="">
                 <p class="ms-color-primary"><i class="fa fa-solid fa-globe"></i> Country/Region Italy</p>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
                 <div class="row">
                     <div class="col-12 col-md ">
                         <ul>
@@ -706,7 +706,25 @@
         previousValue= scroll;
 
     }
+
+    const productBig = document.querySelector("#product-big");
+    const productSmall = document.querySelectorAll(".product-img");
+
+    for( var element of productSmall) {
+        element.addEventListener("mouseover", (e)=> showImg(e))
+    }
+
+    function showImg(element) {
+        var smallImg= element.target.src
+        productBig.src = smallImg
+    }
+
+
     </script>
+
+
+
+
 </body>
 
 </html>

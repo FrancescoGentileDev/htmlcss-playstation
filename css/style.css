@@ -70,6 +70,9 @@ nav {
     transition: all 0.3s linear;
 }
 
+
+
+
 .nav-link.dropdown-toggle.show {
   color: var(--brand-color);
 }
@@ -92,13 +95,7 @@ nav {
   color: var(--brand-color);
 }
 
-.animate {
-  animation-duration: 0.7s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  box-shadow: 0px 16px 9px -1px rgba(0, 0, 0, 0.63);
-  z-index: -4;
-}
+
 @keyframes slideIn {
   0% {
     transform: translateY(-14rem);
@@ -226,3 +223,13 @@ footer a {
   color: var(--ms-text-color-primary);
 }
 /*#endregion footer*****/
+@media screen and (min-width: 768px) {
+  .animate {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  box-shadow: 0px 16px 9px -1px rgba(0, 0, 0, 0.63);
+  z-index: -4;
+}
+  
+}
